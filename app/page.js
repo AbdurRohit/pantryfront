@@ -32,6 +32,7 @@ import {
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import ImageIcon from '@mui/icons-material/Image';
+import Image from 'next/image';
 
 
 export default function Home() {
@@ -161,7 +162,7 @@ export default function Home() {
                     </TableCell>
                     <TableCell>
                       {imageUrl && (
-                        <img src={imageUrl} alt={name} style={{ width: '100px', height: '100px', objectFit: 'cover' }} />
+                        <Image src={imageUrl} alt={name} style={{ width: '100px', height: '100px', objectFit: 'cover' }} />
                       )}
                     </TableCell>
                     <TableCell align="right">{quantity}</TableCell>
